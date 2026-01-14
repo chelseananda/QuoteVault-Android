@@ -13,4 +13,12 @@ This project was built using an AI-first approach.
 4. Iteratively refined features using AI debugging and refactoring
 5. Used AI to optimize performance and code quality
 
+## Supabase Setup
+
+- Used AI to draft initial PostgreSQL schema
+- Refined schema manually for Supabase Auth compatibility
+- Used AI to generate realistic seed quote data
+- Implemented relational tables for favorites and collections
+
 AI tools were used as a co-developer, not as a replacement for engineering judgment.
+
