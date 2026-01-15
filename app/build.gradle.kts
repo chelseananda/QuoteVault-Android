@@ -16,6 +16,22 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        val supabaseUrl: String = project.properties["SUPABASE_URL"] as String
+        val supabaseAnonKey: String = project.properties["SUPABASE_ANON_KEY"] as String
+
+        buildConfigField(
+            "String",
+            "SUPABASE_URL",
+            "\"$supabaseUrl\""
+        )
+
+        buildConfigField(
+            "String",
+            "SUPABASE_ANON_KEY",
+            "\"$supabaseAnonKey\""
+        )
+
     }
 
     buildTypes {
@@ -39,6 +55,7 @@ android {
 
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 
@@ -60,9 +77,9 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.7.7")
 
     // Supabase
-    implementation("io.github.jan-tennert.supabase:supabase-kt:2.4.0")
-    implementation("io.github.jan-tennert.supabase:auth-kt:2.4.0")
-    implementation("io.github.jan-tennert.supabase:postgrest-kt:2.4.0")
+    implementation("io.github.jan-tennert.supabase:supabase-kt:3.0.0")
+    implementation("io.github.jan-tennert.supabase:postgrest-kt:3.0.0")
+    implementation("io.github.jan-tennert.supabase:auth-kt:3.0.0")
 
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
