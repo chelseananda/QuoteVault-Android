@@ -20,5 +20,13 @@ This project was built using an AI-first approach.
 - Used AI to generate realistic seed quote data
 - Implemented relational tables for favorites and collections
 
+## Android App Setup
+
+- Used AI to validate MVVM architecture and package structure
+- Manually created project structure and navigation
+- Integrated Supabase client with centralized configuration
+- Focused on maintainability and clarity before adding features
+
+
 AI tools were used as a co-developer, not as a replacement for engineering judgment.
 
